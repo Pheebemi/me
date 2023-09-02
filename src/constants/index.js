@@ -172,7 +172,7 @@ const projects = [
   {
     name: "ChatGPT Clone",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "Web-based platform using react and vite , integrated with OpenAI API. this AI-powered chatbot mimics human-like conversation88.",
     tags: [
       {
         name: "react",
@@ -188,12 +188,12 @@ const projects = [
       },
     ],
     image: gptclone,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/pheebemi",
   },
   {
     name: "Chatroom",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "Web application that enables users to chat in room and communicate and interacte online ",
     tags: [
       {
         name: "javascript",
