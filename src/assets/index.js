@@ -22,6 +22,9 @@ import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
 import wordpress from "./tech/wordpress.png";
 import excel from "./tech/excel.png"
+import native from './tech/native.png'
+import py from './tech/py.png'
+import sql from './tech/sql.png'
 
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
@@ -35,6 +38,8 @@ import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 import chatroom from "./chatroom.png";
 import gptclone from "./chatgpt-clone.png";
+import jalingo from './jalingo.png';
+import shopdesk from './shopdesk.png';
 
 export {
   logo,
@@ -70,5 +75,11 @@ export {
   jobit,
   tripguide,
   chatroom,
-  gptclone
+  gptclone,
+  jalingo,
+  shopdesk,
+  native,
+  py,
+  sql
+  
 };

@@ -15,6 +15,9 @@ import {
   wordpress,
   excel,
   git,
+  native,
+  py,
+  sql,
   figma,
   docker,
   meta,
@@ -29,6 +32,9 @@ import {
   threejs,
   amachon,
   darra,
+  jalingo,
+  shopdesk,
+
 } from "../assets";
 
 export const navLinks = [
@@ -110,6 +116,30 @@ const technologies = [
     name: "Excel",
     icon: excel,
   },
+  {
+    name: "Figma",
+    icon: figma,
+  },
+  {
+    name: "Docker",
+    icon: docker,
+  },
+  {
+    name: "Native",
+    icon: native,
+  },
+  {
+    name: "Python",
+    icon: py,
+  },
+  {
+    name: "SQL",
+    icon: sql,
+  },
+  {
+    name: "TypeScript",
+    icon: typescript,
+  },
 ];
 
 const experiences = [
@@ -170,6 +200,48 @@ const testimonials = [
 
 const projects = [
   {
+    name: "Jalingo Local goverment website",
+    description:
+      "the offical website for jalingo local government nigeria",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "sql",
+        color: "green-text-gradient",
+      },
+      {
+        name: "tailwind",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: jalingo,
+    source_code_link: "https://jalingolga.tr.gov.ng/",
+  },
+  {
+    name: "ShopDesk Frontend",
+    description:
+      "ShopDesk is a web-based platform for inventory management, sales tracking, and customer relationship management.",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "sql",
+        color: "green-text-gradient",
+      },
+      {
+        name: "tailwind",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: shopdesk,
+    source_code_link: "https://shopdesk.vercel.app/",
+  },
+  {
     name: "ChatGPT Clone",
     description:
       "Web-based platform using react and vite , integrated with OpenAI API. this AI-powered chatbot mimics human-like conversation88.",
@@ -209,7 +281,7 @@ const projects = [
       },
     ],
     image: chatroom,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/pheebemi",
   },
   {
     name: "Trip Guide",
