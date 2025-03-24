@@ -230,7 +230,7 @@ const projects = [
         color: "blue-text-gradient",
       },
       {
-        name: "sql",
+        name: "sqllite",
         color: "green-text-gradient",
       },
       {
