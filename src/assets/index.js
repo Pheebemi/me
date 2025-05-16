@@ -38,7 +38,7 @@ import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 import chatroom from "./chatroom.png";
 import gptclone from "./chatgpt-clone.png";
-import jalingo from './jalingo.png';
+import jala from './jalingo.png';
 import shopdesk from './shopdesk.png';
 
 export {
@@ -76,7 +76,7 @@ export {
   tripguide,
   chatroom,
   gptclone,
-  jalingo,
+  jala,
   shopdesk,
   native,
   py,

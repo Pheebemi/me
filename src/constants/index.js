@@ -32,7 +32,7 @@ import {
   threejs,
   amachon,
   darra,
-  jalingo,
+  jala,
   shopdesk,
 
 } from "../assets";
@@ -217,7 +217,7 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: jalingo,
+    image: jala,
     source_code_link: "https://jalingolga.tr.gov.ng/",
   },
   {
