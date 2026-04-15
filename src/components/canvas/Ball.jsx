@@ -1,22 +1,17 @@
 import React, { Suspense } from "react";
 import { Canvas } from "@react-three/fiber";
-import {
-  Decal,
-  Float,
-  OrbitControls,
-  Preload,
-  useTexture,
-} from "@react-three/drei";
+import { Decal, Float, OrbitControls, Preload, useTexture } from "@react-three/drei";
 
 import CanvasLoader from "../Loader";
 
-const Ball = (props) => {
-  const [decal] = useTexture([props.imgUrl]);
+const COLS = 5;
+const SPACING = 6;
+
+const Ball = ({ imgUrl, position }) => {
+  const [decal] = useTexture([imgUrl]);
 
   return (
-    <Float speed={1.75} rotationIntensity={1} floatIntensity={2}>
-      <ambientLight intensity={0.25} />
-      <directionalLight position={[0, 0, 0.05]} />
+    <Float speed={1.75} rotationIntensity={1} floatIntensity={2} position={position}>
       <mesh castShadow receiveShadow scale={2.75}>
         <icosahedronGeometry args={[1, 1]} />
         <meshStandardMaterial
@@ -37,18 +32,29 @@ const Ball = (props) => {
   );
 };
 
-const BallCanvas = ({ icon }) => {
+const BallCanvas = ({ icons }) => {
+  const totalRows = Math.ceil(icons.length / COLS);
+  const cameraZ = 14 + totalRows * 3;
+
   return (
     <Canvas
       frameloop='demand'
       dpr={[1, 2]}
       gl={{ preserveDrawingBuffer: true }}
+      camera={{ position: [0, 0, cameraZ], fov: 75 }}
     >
       <Suspense fallback={<CanvasLoader />}>
         <OrbitControls enableZoom={false} />
-        <Ball imgUrl={icon} />
+        <ambientLight intensity={0.25} />
+        <directionalLight position={[0, 0, 0.05]} />
+        {icons.map((icon, index) => {
+          const col = index % COLS;
+          const row = Math.floor(index / COLS);
+          const x = (col - (COLS - 1) / 2) * SPACING;
+          const y = ((totalRows - 1) / 2 - row) * SPACING;
+          return <Ball key={index} imgUrl={icon} position={[x, y, 0]} />;
+        })}
       </Suspense>
-
       <Preload all />
     </Canvas>
   );
