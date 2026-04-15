@@ -38,13 +38,21 @@ const ServiceCard = ({ index, title, icon }) => (
 const About = () => {
   return (
     <>
-      <motion.div variants={textVariant()}>
+      <motion.div
+        initial={{ opacity: 0, y: -50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ type: "spring", duration: 1.25 }}
+        viewport={{ once: true }}
+      >
         <p className={styles.sectionSubText}>Introduction</p>
         <h2 className={styles.sectionHeadText}>Overview.</h2>
       </motion.div>
 
       <motion.p
-        variants={fadeIn("", "", 0.1, 1)}
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ delay: 0.1, duration: 1 }}
+        viewport={{ once: true }}
         className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
       >
          I'm a full-stack developer specializing in Django + JavaScript/TypeScript and Ruby on Rails. On the backend I build scalable REST APIs with Python and TypeScript; on the frontend I craft modern interfaces with React, Next.js, and Vue.js; and on mobile I ship cross-platform apps with Expo and React Native. My work spans e-commerce, LMS platforms, healthcare systems, election portals, and retail — with a strong focus on API design, authentication, payment integration, database architecture, and DevOps.

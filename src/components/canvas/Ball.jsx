@@ -7,11 +7,9 @@ import CanvasLoader from "../Loader";
 const COLS = 5;
 const SPACING = 6;
 
-const Ball = ({ imgUrl, position }) => {
-  const [decal] = useTexture([imgUrl]);
-
+const Ball = ({ decal }) => {
   return (
-    <Float speed={1.75} rotationIntensity={1} floatIntensity={2} position={position}>
+    <Float speed={1.75} rotationIntensity={1} floatIntensity={2}>
       <mesh castShadow receiveShadow scale={2.75}>
         <icosahedronGeometry args={[1, 1]} />
         <meshStandardMaterial
@@ -32,7 +30,30 @@ const Ball = ({ imgUrl, position }) => {
   );
 };
 
-const BallCanvas = ({ icons }) => {
+const BallScene = ({ icons }) => {
+  const textures = useTexture(icons);
+  const totalRows = Math.ceil(icons.length / COLS);
+
+  return (
+    <>
+      <ambientLight intensity={0.25} />
+      <directionalLight position={[0, 0, 0.05]} />
+      {textures.map((texture, index) => {
+        const col = index % COLS;
+        const row = Math.floor(index / COLS);
+        const x = (col - (COLS - 1) / 2) * SPACING;
+        const y = ((totalRows - 1) / 2 - row) * SPACING;
+        return (
+          <group key={index} position={[x, y, 0]}>
+            <Ball decal={texture} />
+          </group>
+        );
+      })}
+    </>
+  );
+};
+
+const BallCanvas = ({ icons = [] }) => {
   const totalRows = Math.ceil(icons.length / COLS);
   const cameraZ = 12 + totalRows * 3;
 
@@ -45,15 +66,7 @@ const BallCanvas = ({ icons }) => {
     >
       <Suspense fallback={<CanvasLoader />}>
         <OrbitControls enableZoom={false} />
-        <ambientLight intensity={0.25} />
-        <directionalLight position={[0, 0, 0.05]} />
-        {icons.map((icon, index) => {
-          const col = index % COLS;
-          const row = Math.floor(index / COLS);
-          const x = (col - (COLS - 1) / 2) * SPACING;
-          const y = ((totalRows - 1) / 2 - row) * SPACING;
-          return <Ball key={index} imgUrl={icon} position={[x, y, 0]} />;
-        })}
+        <BallScene icons={icons} />
       </Suspense>
       <Preload all />
     </Canvas>
