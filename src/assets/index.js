@@ -7,21 +7,26 @@ import github from "./github.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
 
-import css from "./tech/css.png";
+import css from "./tech/css.svg";
 import docker from "./tech/docker.png";
 import figma from "./tech/figma.png";
 import git from "./tech/git.png";
-import html from "./tech/html.png";
-import javascript from "./tech/javascript.png";
-import mongodb from "./tech/mongodb.png";
-import nodejs from "./tech/nodejs.png";
-import reactjs from "./tech/reactjs.png";
+import html from "./tech/html.svg";
+import javascript from "./tech/javascript.svg";
+import mongodb from "./tech/mongodb.svg";
+import nodejs from "./tech/nodejs.svg";
+import reactjs from "./tech/reactjs.svg";
 import redux from "./tech/redux.png";
-import tailwind from "./tech/tailwind.png";
+import tailwind from "./tech/tailwind.svg";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
 import wordpress from "./tech/wordpress.png";
-import excel from "./tech/excel.png"
+import excel from "./tech/excel.png";
+import django from "./tech/django.svg";
+import nextjs from "./tech/nextjs.svg";
+import vuejs from "./tech/vuejs.svg";
+import rails from "./tech/rails.svg";
+import ruby from "./tech/ruby.svg";
 import native from './tech/native.png'
 import py from './tech/py.png'
 import sql from './tech/sql.png'
@@ -38,8 +43,8 @@ import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 import chatroom from "./chatroom.png";
 import gptclone from "./chatgpt-clone.png";
-import jala from './jobit.png';
-import shopdesk from './jobit.png';
+import jala from './jalingo.PNG';
+import shopdesk from './shopdesk.PNG';
 
 export {
   logo,
@@ -80,6 +85,10 @@ export {
   shopdesk,
   native,
   py,
-  sql
-  
+  sql,
+  django,
+  nextjs,
+  vuejs,
+  rails,
+  ruby,
 };

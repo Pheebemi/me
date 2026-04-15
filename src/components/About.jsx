@@ -1,5 +1,5 @@
 import React from "react";
-import Tilt from "react-tilt";
+import Tilt from "react-parallax-tilt";
 import { motion } from "framer-motion";
 
 import { styles } from "../styles";
@@ -47,7 +47,7 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
       >
-         I'm a developer who primarily focuses on web developmentwith the MERN stack, using Wordpres as a supporting tool. Additionaly, I excel in data analysis with Excel and Tableau, I explore creative applications with ThreeJs for interactive graphics.
+         I'm a full-stack developer specializing in Django + JavaScript/TypeScript and Ruby on Rails. On the backend I build scalable REST APIs with Python and TypeScript; on the frontend I craft modern interfaces with React, Next.js, and Vue.js; and on mobile I ship cross-platform apps with Expo and React Native. My work spans e-commerce, LMS platforms, healthcare systems, election portals, and retail — with a strong focus on API design, authentication, payment integration, database architecture, and DevOps.
       </motion.p>
 
       <div className='mt-20 flex flex-wrap gap-10'>

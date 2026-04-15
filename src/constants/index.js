@@ -34,7 +34,11 @@ import {
   darra,
   jala,
   shopdesk,
-
+  django,
+  nextjs,
+  vuejs,
+  rails,
+  ruby,
 } from "../assets";
 
 export const navLinks = [
@@ -58,12 +62,12 @@ const services = [
     icon: web,
   },
   {
-    title: "Wordpress Developer",
-    icon: mobile,
-  },
-  {
     title: "Backend Developer",
     icon: backend,
+  },
+  {
+    title: "Mobile Developer",
+    icon: mobile,
   },
   {
     title: "Data Analyst",
@@ -140,6 +144,26 @@ const technologies = [
     name: "TypeScript",
     icon: typescript,
   },
+  {
+    name: "Django",
+    icon: django,
+  },
+  {
+    name: "Next.js",
+    icon: nextjs,
+  },
+  {
+    name: "Vue.js",
+    icon: vuejs,
+  },
+  {
+    name: "Ruby on Rails",
+    icon: rails,
+  },
+  {
+    name: "Ruby",
+    icon: ruby,
+  },
 ];
 
 const experiences = [
@@ -200,109 +224,268 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Jalingo Local goverment website",
+    name: "Jalingo Local Government Website",
     description:
-      "the offical website for jalingo local government nigeria",
+      "The official website for Jalingo Local Government, Nigeria — built with React and Tailwind CSS for a modern, accessible civic platform.",
     tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "sql",
-        color: "green-text-gradient",
-      },
-      {
-        name: "tailwind",
-        color: "pink-text-gradient",
-      },
+      { name: "react", color: "blue-text-gradient" },
+      { name: "tailwind", color: "pink-text-gradient" },
+      { name: "sql", color: "green-text-gradient" },
     ],
     image: jala,
     source_code_link: "https://jalingolga.tr.gov.ng/",
   },
   {
-    name: "ShopDesk Frontend",
+    name: "ShopDesk",
     description:
-      "ShopDesk is a web-based platform for inventory management, sales tracking, and customer relationship management.",
+      "A JavaScript-based point-of-sale and retail management system. Demonstrates expertise in business applications, responsive design, and retail domain knowledge.",
     tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "sqllite",
-        color: "green-text-gradient",
-      },
-      {
-        name: "tailwind",
-        color: "pink-text-gradient",
-      },
+      { name: "javascript", color: "blue-text-gradient" },
+      { name: "pos-system", color: "green-text-gradient" },
+      { name: "css", color: "pink-text-gradient" },
     ],
     image: shopdesk,
-    source_code_link: "https://shopdesk.vercel.app/",
+    source_code_link: "https://github.com/Pheebemi/shopDesk",
   },
   {
-    name: "ChatGPT Clone",
+    name: "Lake View College Management System",
     description:
-      "Web-based platform using react and vite , integrated with OpenAI API. this AI-powered chatbot mimics human-like conversation88.",
+      "A modern web-based college management system with role-based access, course registration, Paystack payment processing, and real-time academic records.",
     tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "openai api",
-        color: "green-text-gradient",
-      },
-      {
-        name: "tailwind",
-        color: "pink-text-gradient",
-      },
+      { name: "django", color: "blue-text-gradient" },
+      { name: "paystack", color: "green-text-gradient" },
+      { name: "tailwind", color: "pink-text-gradient" },
     ],
-    image: gptclone,
-    source_code_link: "https://github.com/pheebemi",
+    image: web,
+    source_code_link: "https://github.com/Pheebemi/lake-view-college",
   },
   {
-    name: "Chatroom",
+    name: "Raddai LMS",
     description:
-      "Web application that enables users to chat in room and communicate and interacte online ",
+      "An enterprise-grade Learning Management System built with Next.js and TypeScript featuring course management, student enrollment, progress tracking, and assessment tools.",
     tags: [
-      {
-        name: "javascript",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "express",
-        color: "green-text-gradient",
-      },
-      {
-        name: "socket io",
-        color: "pink-text-gradient",
-      },
+      { name: "nextjs", color: "blue-text-gradient" },
+      { name: "typescript", color: "green-text-gradient" },
+      { name: "lms", color: "pink-text-gradient" },
     ],
-    image: chatroom,
-    source_code_link: "https://github.com/pheebemi",
+    image: creator,
+    source_code_link: "https://github.com/Pheebemi/raddai-lms",
   },
   {
-    name: "Trip Guide",
+    name: "Raddai Backend",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "A robust Django REST API powering the Raddai Metropolitan School system with multi-role auth (Admin, Staff, Student, Parent), JWT security, and financial management modules.",
     tags: [
-      {
-        name: "nextjs",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "supabase",
-        color: "green-text-gradient",
-      },
-      {
-        name: "css",
-        color: "pink-text-gradient",
-      },
+      { name: "django", color: "blue-text-gradient" },
+      { name: "jwt-auth", color: "green-text-gradient" },
+      { name: "rest-api", color: "pink-text-gradient" },
+    ],
+    image: backend,
+    source_code_link: "https://github.com/Pheebemi/raddai-backend",
+  },
+  {
+    name: "Darra App",
+    description:
+      "A mobile-first cross-platform application built with Expo and TypeScript, featuring file-based routing with Expo Router and deployable on iOS, Android, and web.",
+    tags: [
+      { name: "expo", color: "blue-text-gradient" },
+      { name: "typescript", color: "green-text-gradient" },
+      { name: "react-native", color: "pink-text-gradient" },
+    ],
+    image: mobile,
+    source_code_link: "https://github.com/Pheebemi/darra-app",
+  },
+  {
+    name: "Darra Backend",
+    description:
+      "A polyglot backend combining TypeScript microservices and Python APIs with Next.js frontend integration, showcasing cross-language and scalable API design expertise.",
+    tags: [
+      { name: "typescript", color: "blue-text-gradient" },
+      { name: "python", color: "green-text-gradient" },
+      { name: "microservices", color: "pink-text-gradient" },
+    ],
+    image: backend,
+    source_code_link: "https://github.com/Pheebemi/darra-backend",
+  },
+  {
+    name: "SIT Technologies LMS",
+    description:
+      "A full-stack Learning Management System with a Django REST Framework backend (Student, Tutor, Admin roles) paired with a Next.js TypeScript frontend for seamless academic workflows.",
+    tags: [
+      { name: "django-rest", color: "blue-text-gradient" },
+      { name: "nextjs", color: "green-text-gradient" },
+      { name: "jwt-auth", color: "pink-text-gradient" },
+    ],
+    image: creator,
+    source_code_link: "https://github.com/Pheebemi/lms_backend_sit",
+  },
+  {
+    name: "Election Backend — Taraba Portal",
+    description:
+      "A Django REST API for mission-critical election data management with geographic hierarchies (LGAs, Wards, Polling Units), real-time result aggregation, and role-based clerk access.",
+    tags: [
+      { name: "django", color: "blue-text-gradient" },
+      { name: "data-aggregation", color: "green-text-gradient" },
+      { name: "security", color: "pink-text-gradient" },
+    ],
+    image: carrent,
+    source_code_link: "https://github.com/Pheebemi/election-backend",
+  },
+  {
+    name: "Jhaytermax E-commerce Backend",
+    description:
+      "A comprehensive Django REST e-commerce backend with advanced product management, order tracking, Flutterwave payment integration, and location-based delivery fee calculation.",
+    tags: [
+      { name: "django-rest", color: "blue-text-gradient" },
+      { name: "flutterwave", color: "green-text-gradient" },
+      { name: "e-commerce", color: "pink-text-gradient" },
+    ],
+    image: jobit,
+    source_code_link: "https://github.com/Pheebemi/jhaytermax-backend",
+  },
+  {
+    name: "Dannys Wellness Clinic",
+    description:
+      "A healthcare clinic management system with a Django REST backend supporting multi-role auth (Doctor, Nurse, Pharmacist, Lab Tech), patient management, and appointment scheduling.",
+    tags: [
+      { name: "django-rest", color: "blue-text-gradient" },
+      { name: "healthcare", color: "green-text-gradient" },
+      { name: "multi-role", color: "pink-text-gradient" },
     ],
     image: tripguide,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/Pheebemi/dannys-backend",
+  },
+  {
+    name: "Menopause Blog Platform",
+    description:
+      "A health and wellness content platform built with React, TypeScript, and Vite featuring Sanity CMS integration for dynamic real-time content management.",
+    tags: [
+      { name: "react", color: "blue-text-gradient" },
+      { name: "sanity-cms", color: "green-text-gradient" },
+      { name: "typescript", color: "pink-text-gradient" },
+    ],
+    image: gptclone,
+    source_code_link: "https://github.com/Pheebemi/menopause",
+  },
+  {
+    name: "Thrive Library",
+    description:
+      "A school library management platform built with Ruby on Rails featuring inventory management, circulation tracking, RSpec testing, Brakeman security scanning, and CI/CD pipelines.",
+    tags: [
+      { name: "rails-8", color: "blue-text-gradient" },
+      { name: "rspec", color: "green-text-gradient" },
+      { name: "ci-cd", color: "pink-text-gradient" },
+    ],
+    image: chatroom,
+    source_code_link: "https://github.com/chrisehlee/thrive-library",
+  },
+  {
+    name: "Fly Drone",
+    description:
+      "A TypeScript application for drone management and control systems demonstrating hardware-software integration, real-time data handling, and IoT expertise.",
+    tags: [
+      { name: "typescript", color: "blue-text-gradient" },
+      { name: "iot", color: "green-text-gradient" },
+      { name: "real-time", color: "pink-text-gradient" },
+    ],
+    image: mobile,
+    source_code_link: "https://github.com/Pheebemi/fly-drone",
+  },
+  {
+    name: "Dannys Wellness Clinic App",
+    description:
+      "The frontend for Dannys Wellness Clinic built with Next.js and TypeScript, providing healthcare professionals intuitive tools for patient management and clinic operations.",
+    tags: [
+      { name: "nextjs", color: "blue-text-gradient" },
+      { name: "typescript", color: "green-text-gradient" },
+      { name: "healthcare-ux", color: "pink-text-gradient" },
+    ],
+    image: carrent,
+    source_code_link: "https://github.com/Pheebemi/dannys-app",
+  },
+  {
+    name: "Coastj",
+    description:
+      "A TypeScript-powered Next.js web application showcasing clean code architecture, modern React patterns, and a focus on type safety and scalability.",
+    tags: [
+      { name: "nextjs", color: "blue-text-gradient" },
+      { name: "typescript", color: "green-text-gradient" },
+      { name: "modern-arch", color: "pink-text-gradient" },
+    ],
+    image: web,
+    source_code_link: "https://github.com/Pheebemi/coastj",
+  },
+  {
+    name: "Algadaff",
+    description:
+      "A Next.js and TypeScript web application showcasing strong understanding of React hooks, server components, and the TypeScript type system with clean maintainable architecture.",
+    tags: [
+      { name: "nextjs", color: "blue-text-gradient" },
+      { name: "typescript", color: "green-text-gradient" },
+      { name: "react-patterns", color: "pink-text-gradient" },
+    ],
+    image: jobit,
+    source_code_link: "https://github.com/Pheebemi/algadaff",
+  },
+  {
+    name: "Algaddaftech",
+    description:
+      "A React + TypeScript + Vite application with a modern, performant UI demonstrating component-based architecture and contemporary frontend tooling with HMR.",
+    tags: [
+      { name: "react", color: "blue-text-gradient" },
+      { name: "typescript", color: "green-text-gradient" },
+      { name: "vite", color: "pink-text-gradient" },
+    ],
+    image: tripguide,
+    source_code_link: "https://github.com/Pheebemi/algaddaftech",
+  },
+  {
+    name: "Lake View College Pro",
+    description:
+      "An enhanced iteration of the Lake View College Management System with improved student and staff portals, enhanced Paystack payment processing, and better responsive design.",
+    tags: [
+      { name: "django", color: "blue-text-gradient" },
+      { name: "javascript", color: "green-text-gradient" },
+      { name: "paystack", color: "pink-text-gradient" },
+    ],
+    image: creator,
+    source_code_link: "https://github.com/Pheebemi/lake-view-college-pro",
+  },
+  {
+    name: "Sam Blog",
+    description:
+      "A full-featured blogging platform built with HTML5, JavaScript, and a Python backend demonstrating CMS expertise, dynamic content loading, and responsive blog design.",
+    tags: [
+      { name: "javascript", color: "blue-text-gradient" },
+      { name: "python", color: "green-text-gradient" },
+      { name: "html5", color: "pink-text-gradient" },
+    ],
+    image: gptclone,
+    source_code_link: "https://github.com/Pheebemi/sam-blog",
+  },
+  {
+    name: "Hausa Dev",
+    description:
+      "A specialized JavaScript project focused on language localization and development for the Hausa community, demonstrating i18n expertise and inclusive technology solutions.",
+    tags: [
+      { name: "javascript", color: "blue-text-gradient" },
+      { name: "i18n", color: "green-text-gradient" },
+      { name: "localization", color: "pink-text-gradient" },
+    ],
+    image: chatroom,
+    source_code_link: "https://github.com/Pheebemi/hausa-dev",
+  },
+  {
+    name: "Flysmartt Frontend",
+    description:
+      "A TypeScript-powered frontend for the Flysmartt platform demonstrating mastery of modern web technologies, component architecture, and type-safe scalable application design.",
+    tags: [
+      { name: "typescript", color: "blue-text-gradient" },
+      { name: "component-arch", color: "green-text-gradient" },
+      { name: "ux-focused", color: "pink-text-gradient" },
+    ],
+    image: backend,
+    source_code_link: "https://github.com/Flysmartt/Front-end",
   },
 ];
 
