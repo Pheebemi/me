@@ -39,6 +39,10 @@ import {
   vuejs,
   rails,
   ruby,
+  sit,
+  shapay,
+  algaddaf,
+  thrive,
 } from "../assets";
 
 export const navLinks = [
@@ -181,7 +185,7 @@ const experiences = [
     ],
   },
   {
-    title: " Developer",
+    title: "Developer",
     company_name: "Darra",
     icon: darra,
     iconBg: "#E6DEDD",
@@ -192,7 +196,59 @@ const experiences = [
       "Implementing responsive design and ensuring cross-browser compatibility.",
       "Participating in code reviews and providing constructive feedback to other developers.",
     ],
-  }, 
+  },
+  {
+    title: "Software Engineer",
+    company_name: "Algadaff Technology",
+    icon: algaddaf,
+    iconBg: "#383E56",
+    date: "2023 - Till date",
+    points: [
+      "Designing and building scalable web applications using React, Next.js, and TypeScript.",
+      "Developing backend services and RESTful APIs to support enterprise technology solutions.",
+      "Collaborating with design and product teams to deliver high-quality digital products.",
+      "Ensuring code quality through reviews, testing, and adherence to best practices.",
+    ],
+  },
+  {
+    title: "Software Engineer",
+    company_name: "Thrive Library",
+    icon: thrive,
+    iconBg: "#E6DEDD",
+    date: "2026",
+    points: [
+      "Building and maintaining the Thrive school library management platform using Ruby on Rails.",
+      "Implementing CI/CD pipelines and automated security scanning with Brakeman to ensure production-ready code.",
+      "Writing comprehensive test suites with RSpec to maintain high code coverage and reliability.",
+      "Collaborating with the team to streamline library operations including inventory and circulation workflows.",
+    ],
+  },
+  {
+    title: "Software Engineer",
+    company_name: "Solution Innovation and Training (SIT)",
+    icon: sit,
+    iconBg: "#383E56",
+    date: "2025 - Till date",
+    points: [
+      "Building and maintaining full-stack web applications using modern JavaScript and TypeScript frameworks.",
+      "Designing and developing RESTful APIs and backend services to support educational and enterprise platforms.",
+      "Collaborating with cross-functional teams to deliver scalable software solutions for training and innovation programs.",
+      "Participating in code reviews and mentoring junior developers on best practices.",
+    ],
+  },
+  {
+    title: "Frontend Engineer",
+    company_name: "Shapay",
+    icon: shapay,
+    iconBg: "#E6DEDD",
+    date: "2025 - Till date",
+    points: [
+      "Developing responsive and performant frontend interfaces for a fintech payment platform.",
+      "Implementing secure and seamless user flows for financial transactions and account management.",
+      "Collaborating with product and backend teams to integrate payment APIs and ensure a smooth user experience.",
+      "Optimizing UI performance and ensuring cross-browser compatibility across all supported devices.",
+    ],
+  },
 ];
 
 const testimonials = [

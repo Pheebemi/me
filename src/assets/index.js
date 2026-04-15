@@ -37,6 +37,10 @@ import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
 import amachon from "./company/amachon.png"
 import darra from "./company/darra.png"
+import sit from "./company/sit.png"
+import shapay from "./company/shapay.png"
+import algaddaf from "./company/algaddaf.png"
+import thrive from "./company/thrive.png"
 
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
@@ -91,4 +95,8 @@ export {
   vuejs,
   rails,
   ruby,
+  sit,
+  shapay,
+  algaddaf,
+  thrive,
 };
