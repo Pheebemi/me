@@ -1,17 +1,22 @@
-import React, { Suspense } from "react";
+import React, { Suspense, useRef, useState, useEffect } from "react";
 import { Canvas } from "@react-three/fiber";
-import { Decal, Float, OrbitControls, Preload, useTexture } from "@react-three/drei";
+import {
+  Decal,
+  Float,
+  OrbitControls,
+  Preload,
+  useTexture,
+} from "@react-three/drei";
 
 import CanvasLoader from "../Loader";
 
-const COLS = 5;
-const SPACING = 6;
-
-const Ball = ({ imgUrl, position }) => {
-  const [decal] = useTexture([imgUrl]);
+const Ball = (props) => {
+  const [decal] = useTexture([props.imgUrl]);
 
   return (
-    <Float speed={1.75} rotationIntensity={1} floatIntensity={2} position={position}>
+    <Float speed={1.75} rotationIntensity={1} floatIntensity={2}>
+      <ambientLight intensity={0.25} />
+      <directionalLight position={[0, 0, 0.05]} />
       <mesh castShadow receiveShadow scale={2.75}>
         <icosahedronGeometry args={[1, 1]} />
         <meshStandardMaterial
@@ -32,31 +37,37 @@ const Ball = ({ imgUrl, position }) => {
   );
 };
 
-const BallCanvas = ({ icons }) => {
-  const totalRows = Math.ceil(icons.length / COLS);
-  const cameraZ = 14 + totalRows * 3;
+const BallCanvas = ({ icon }) => {
+  const ref = useRef();
+  const [visible, setVisible] = useState(false);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) setVisible(true);
+      },
+      { threshold: 0.1 }
+    );
+    if (ref.current) observer.observe(ref.current);
+    return () => observer.disconnect();
+  }, []);
 
   return (
-    <Canvas
-      frameloop='demand'
-      dpr={[1, 2]}
-      gl={{ preserveDrawingBuffer: true }}
-      camera={{ position: [0, 0, cameraZ], fov: 75 }}
-    >
-      <Suspense fallback={<CanvasLoader />}>
-        <OrbitControls enableZoom={false} />
-        <ambientLight intensity={0.25} />
-        <directionalLight position={[0, 0, 0.05]} />
-        {icons.map((icon, index) => {
-          const col = index % COLS;
-          const row = Math.floor(index / COLS);
-          const x = (col - (COLS - 1) / 2) * SPACING;
-          const y = ((totalRows - 1) / 2 - row) * SPACING;
-          return <Ball key={index} imgUrl={icon} position={[x, y, 0]} />;
-        })}
-      </Suspense>
-      <Preload all />
-    </Canvas>
+    <div ref={ref} style={{ width: "100%", height: "100%" }}>
+      {visible && (
+        <Canvas
+          frameloop='demand'
+          dpr={[1, 2]}
+          gl={{ preserveDrawingBuffer: true }}
+        >
+          <Suspense fallback={<CanvasLoader />}>
+            <OrbitControls enableZoom={false} />
+            <Ball imgUrl={icon} />
+          </Suspense>
+          <Preload all />
+        </Canvas>
+      )}
+    </div>
   );
 };
 
