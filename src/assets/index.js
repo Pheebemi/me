@@ -42,14 +42,6 @@ import shapay from "./company/shapay.png"
 import algaddaf from "./company/algaddaf.png"
 import thrive from "./company/thrive.png"
 
-import carrent from "./carrent.png";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
-import chatroom from "./chatroom.png";
-import gptclone from "./chatgpt-clone.png";
-import jala from './jalingo.PNG';
-import shopdesk from './shopdesk.PNG';
-
 export {
   logo,
   backend,
@@ -80,13 +72,6 @@ export {
   tesla,
   amachon,
   darra,
-  carrent,
-  jobit,
-  tripguide,
-  chatroom,
-  gptclone,
-  jala,
-  shopdesk,
   native,
   py,
   sql,

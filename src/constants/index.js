@@ -24,16 +24,9 @@ import {
   starbucks,
   tesla,
   shopify,
-  carrent,
-  jobit,
-  tripguide,
-  chatroom,
-  gptclone,
   threejs,
   amachon,
   darra,
-  jala,
-  shopdesk,
   django,
   nextjs,
   vuejs,
@@ -288,7 +281,7 @@ const projects = [
       { name: "tailwind", color: "pink-text-gradient" },
       { name: "sql", color: "green-text-gradient" },
     ],
-    image: jala,
+    icon: reactjs,
     source_code_link: "https://jalingolga.tr.gov.ng/",
   },
   {
@@ -300,7 +293,7 @@ const projects = [
       { name: "pos-system", color: "green-text-gradient" },
       { name: "css", color: "pink-text-gradient" },
     ],
-    image: shopdesk,
+    icon: javascript,
     source_code_link: "https://github.com/Pheebemi/shopDesk",
   },
   {
@@ -312,56 +305,32 @@ const projects = [
       { name: "paystack", color: "green-text-gradient" },
       { name: "tailwind", color: "pink-text-gradient" },
     ],
-    image: web,
+    icon: django,
     source_code_link: "https://github.com/Pheebemi/lake-view-college",
   },
   {
     name: "Raddai LMS",
     description:
-      "An enterprise-grade Learning Management System built with Next.js and TypeScript featuring course management, student enrollment, progress tracking, and assessment tools.",
+      "An enterprise-grade Learning Management System for Raddai Metropolitan School, pairing a Next.js/TypeScript frontend with a Django REST backend. Multi-role auth (Admin, Staff, Student, Parent) backs course management, enrollment, progress tracking, and financial management.",
     tags: [
       { name: "nextjs", color: "blue-text-gradient" },
-      { name: "typescript", color: "green-text-gradient" },
-      { name: "lms", color: "pink-text-gradient" },
+      { name: "django-rest", color: "green-text-gradient" },
+      { name: "jwt-auth", color: "pink-text-gradient" },
     ],
-    image: creator,
+    icon: nextjs,
     source_code_link: "https://github.com/Pheebemi/raddai-lms",
   },
   {
-    name: "Raddai Backend",
+    name: "Darra",
     description:
-      "A robust Django REST API powering the Raddai Metropolitan School system with multi-role auth (Admin, Staff, Student, Parent), JWT security, and financial management modules.",
-    tags: [
-      { name: "django", color: "blue-text-gradient" },
-      { name: "jwt-auth", color: "green-text-gradient" },
-      { name: "rest-api", color: "pink-text-gradient" },
-    ],
-    image: backend,
-    source_code_link: "https://github.com/Pheebemi/raddai-backend",
-  },
-  {
-    name: "Darra App",
-    description:
-      "A mobile-first cross-platform application built with Expo and TypeScript, featuring file-based routing with Expo Router and deployable on iOS, Android, and web.",
+      "A mobile-first cross-platform application built with Expo and TypeScript, backed by a polyglot backend combining TypeScript microservices and Python APIs. File-based routing with Expo Router, deployable on iOS, Android, and web.",
     tags: [
       { name: "expo", color: "blue-text-gradient" },
-      { name: "typescript", color: "green-text-gradient" },
-      { name: "react-native", color: "pink-text-gradient" },
-    ],
-    image: mobile,
-    source_code_link: "https://github.com/Pheebemi/darra-app",
-  },
-  {
-    name: "Darra Backend",
-    description:
-      "A polyglot backend combining TypeScript microservices and Python APIs with Next.js frontend integration, showcasing cross-language and scalable API design expertise.",
-    tags: [
-      { name: "typescript", color: "blue-text-gradient" },
-      { name: "python", color: "green-text-gradient" },
+      { name: "react-native", color: "green-text-gradient" },
       { name: "microservices", color: "pink-text-gradient" },
     ],
-    image: backend,
-    source_code_link: "https://github.com/Pheebemi/darra-backend",
+    icon: native,
+    source_code_link: "https://github.com/Pheebemi/darra-app",
   },
   {
     name: "SIT Technologies LMS",
@@ -372,43 +341,43 @@ const projects = [
       { name: "nextjs", color: "green-text-gradient" },
       { name: "jwt-auth", color: "pink-text-gradient" },
     ],
-    image: creator,
+    icon: django,
     source_code_link: "https://github.com/Pheebemi/lms_backend_sit",
   },
   {
-    name: "Election Backend — Taraba Portal",
+    name: "Election Portal — Taraba",
     description:
-      "A Django REST API for mission-critical election data management with geographic hierarchies (LGAs, Wards, Polling Units), real-time result aggregation, and role-based clerk access.",
+      "A Next.js election portal backed by a Django REST API for mission-critical election data management — geographic hierarchies (LGAs, Wards, Polling Units), real-time result aggregation, and role-based clerk access.",
     tags: [
       { name: "django", color: "blue-text-gradient" },
-      { name: "data-aggregation", color: "green-text-gradient" },
+      { name: "nextjs", color: "green-text-gradient" },
       { name: "security", color: "pink-text-gradient" },
     ],
-    image: carrent,
+    icon: django,
     source_code_link: "https://github.com/Pheebemi/election-backend",
   },
   {
-    name: "Jhaytermax E-commerce Backend",
+    name: "Jhaytermax E-commerce",
     description:
-      "A comprehensive Django REST e-commerce backend with advanced product management, order tracking, Flutterwave payment integration, and location-based delivery fee calculation.",
+      "A full-stack e-commerce platform with a Next.js storefront and a Django REST backend — product management, order tracking, Flutterwave payment integration, and location-based delivery fee calculation.",
     tags: [
       { name: "django-rest", color: "blue-text-gradient" },
-      { name: "flutterwave", color: "green-text-gradient" },
-      { name: "e-commerce", color: "pink-text-gradient" },
+      { name: "nextjs", color: "green-text-gradient" },
+      { name: "flutterwave", color: "pink-text-gradient" },
     ],
-    image: jobit,
+    icon: django,
     source_code_link: "https://github.com/Pheebemi/jhaytermax-backend",
   },
   {
     name: "Dannys Wellness Clinic",
     description:
-      "A healthcare clinic management system with a Django REST backend supporting multi-role auth (Doctor, Nurse, Pharmacist, Lab Tech), patient management, and appointment scheduling.",
+      "A healthcare clinic management system with a Next.js/TypeScript frontend and a Django REST backend supporting multi-role auth (Doctor, Nurse, Pharmacist, Lab Tech), patient management, and appointment scheduling.",
     tags: [
       { name: "django-rest", color: "blue-text-gradient" },
-      { name: "healthcare", color: "green-text-gradient" },
-      { name: "multi-role", color: "pink-text-gradient" },
+      { name: "nextjs", color: "green-text-gradient" },
+      { name: "healthcare", color: "pink-text-gradient" },
     ],
-    image: tripguide,
+    icon: django,
     source_code_link: "https://github.com/Pheebemi/dannys-backend",
   },
   {
@@ -420,7 +389,7 @@ const projects = [
       { name: "sanity-cms", color: "green-text-gradient" },
       { name: "typescript", color: "pink-text-gradient" },
     ],
-    image: gptclone,
+    icon: reactjs,
     source_code_link: "https://github.com/Pheebemi/menopause",
   },
   {
@@ -432,7 +401,7 @@ const projects = [
       { name: "rspec", color: "green-text-gradient" },
       { name: "ci-cd", color: "pink-text-gradient" },
     ],
-    image: chatroom,
+    icon: rails,
     source_code_link: "https://github.com/chrisehlee/thrive-library",
   },
   {
@@ -444,20 +413,8 @@ const projects = [
       { name: "iot", color: "green-text-gradient" },
       { name: "real-time", color: "pink-text-gradient" },
     ],
-    image: mobile,
+    icon: typescript,
     source_code_link: "https://github.com/Pheebemi/fly-drone",
-  },
-  {
-    name: "Dannys Wellness Clinic App",
-    description:
-      "The frontend for Dannys Wellness Clinic built with Next.js and TypeScript, providing healthcare professionals intuitive tools for patient management and clinic operations.",
-    tags: [
-      { name: "nextjs", color: "blue-text-gradient" },
-      { name: "typescript", color: "green-text-gradient" },
-      { name: "healthcare-ux", color: "pink-text-gradient" },
-    ],
-    image: carrent,
-    source_code_link: "https://github.com/Pheebemi/dannys-app",
   },
   {
     name: "Coastj",
@@ -468,7 +425,7 @@ const projects = [
       { name: "typescript", color: "green-text-gradient" },
       { name: "modern-arch", color: "pink-text-gradient" },
     ],
-    image: web,
+    icon: nextjs,
     source_code_link: "https://github.com/Pheebemi/coastj",
   },
   {
@@ -480,7 +437,7 @@ const projects = [
       { name: "typescript", color: "green-text-gradient" },
       { name: "react-patterns", color: "pink-text-gradient" },
     ],
-    image: jobit,
+    icon: nextjs,
     source_code_link: "https://github.com/Pheebemi/algadaff",
   },
   {
@@ -492,7 +449,7 @@ const projects = [
       { name: "typescript", color: "green-text-gradient" },
       { name: "vite", color: "pink-text-gradient" },
     ],
-    image: tripguide,
+    icon: reactjs,
     source_code_link: "https://github.com/Pheebemi/algaddaftech",
   },
   {
@@ -504,7 +461,7 @@ const projects = [
       { name: "javascript", color: "green-text-gradient" },
       { name: "paystack", color: "pink-text-gradient" },
     ],
-    image: creator,
+    icon: django,
     source_code_link: "https://github.com/Pheebemi/lake-view-college-pro",
   },
   {
@@ -516,7 +473,7 @@ const projects = [
       { name: "python", color: "green-text-gradient" },
       { name: "html5", color: "pink-text-gradient" },
     ],
-    image: gptclone,
+    icon: javascript,
     source_code_link: "https://github.com/Pheebemi/sam-blog",
   },
   {
@@ -528,7 +485,7 @@ const projects = [
       { name: "i18n", color: "green-text-gradient" },
       { name: "localization", color: "pink-text-gradient" },
     ],
-    image: chatroom,
+    icon: javascript,
     source_code_link: "https://github.com/Pheebemi/hausa-dev",
   },
   {
@@ -540,8 +497,104 @@ const projects = [
       { name: "component-arch", color: "green-text-gradient" },
       { name: "ux-focused", color: "pink-text-gradient" },
     ],
-    image: backend,
+    icon: typescript,
     source_code_link: "https://github.com/Flysmartt/Front-end",
+  },
+  {
+    name: "AgriScan",
+    description:
+      "An AI-powered crop scanning and diagnostic platform. A farmer photographs a leaf and gets instant crop identification, disease diagnosis, severity grading, and a treatment plan — via a chained AI pipeline (Gemini, PlantNet, Hugging Face) that falls back to a keyless heuristic when no API key is set.",
+    tags: [
+      { name: "nextjs", color: "blue-text-gradient" },
+      { name: "django-rest", color: "green-text-gradient" },
+      { name: "ai-diagnostics", color: "pink-text-gradient" },
+    ],
+    icon: django,
+    source_code_link: "https://github.com/Pheebemi/agri-backend",
+  },
+  {
+    name: "Weather & Farmland",
+    description:
+      "A weather and farmland intelligence platform for Northern Nigeria, pairing a Django REST API with a Next.js client. A cascading State → LGA → Ward selector surfaces NASA POWER climate data and ESA WorldCover-derived cropland flags for any ward.",
+    tags: [
+      { name: "django-rest", color: "blue-text-gradient" },
+      { name: "nextjs", color: "green-text-gradient" },
+      { name: "geo-data", color: "pink-text-gradient" },
+    ],
+    icon: django,
+    source_code_link: "https://github.com/Pheebemi/weather-backend",
+  },
+  {
+    name: "Bulk SMS Platform",
+    description:
+      "A bulk SMS marketing platform with a Django REST backend and Next.js dashboard. Handles campaigns, contact lists, sender-ID management, and a wallet funded via Flutterwave, routing messages through Termii, Sendchamp, and KudiSMS.",
+    tags: [
+      { name: "django-rest", color: "blue-text-gradient" },
+      { name: "nextjs", color: "green-text-gradient" },
+      { name: "flutterwave", color: "pink-text-gradient" },
+    ],
+    icon: django,
+    source_code_link: "https://github.com/Pheebemi/bulk-backend",
+  },
+  {
+    name: "Jenjo AI",
+    description:
+      "An AI-powered language-learning app for Jenjo, the language of the Dza people of Taraba State, Nigeria. Built with Next.js and a Django + Gemini backend trained on a custom Jenjo dataset, it teaches vocabulary, grammar, and phrases through interactive, conversational lessons.",
+    tags: [
+      { name: "nextjs", color: "blue-text-gradient" },
+      { name: "gemini-ai", color: "green-text-gradient" },
+      { name: "language-preservation", color: "pink-text-gradient" },
+    ],
+    icon: django,
+    source_code_link: "https://github.com/Pheebemi/dza-backend",
+  },
+  {
+    name: "Document Scan & Data Entry",
+    description:
+      "An AI-powered document scanning system built to digitize thousands of physical employment forms. Operators snap a photo, AI extracts the structured data for review, and records save to a Django REST + PostgreSQL backend with Excel export.",
+    tags: [
+      { name: "nextjs", color: "blue-text-gradient" },
+      { name: "django-rest", color: "green-text-gradient" },
+      { name: "ai-ocr", color: "pink-text-gradient" },
+    ],
+    icon: django,
+    source_code_link: "https://github.com/Pheebemi/scan-backend",
+  },
+  {
+    name: "Taraba Agent Tracker",
+    description:
+      "A field agent registration and tracking platform covering Taraba State's full LGA → Ward → Polling Unit hierarchy. A Gemini-powered batch scanner extracts agent names, phone numbers, and passport photos from sheet scans in a single pass.",
+    tags: [
+      { name: "nextjs", color: "blue-text-gradient" },
+      { name: "django", color: "green-text-gradient" },
+      { name: "gemini-ai", color: "pink-text-gradient" },
+    ],
+    icon: django,
+    source_code_link: "https://github.com/Pheebemi/agent-backend",
+  },
+  {
+    name: "Jamaa",
+    description:
+      "An open-source, offline-first case management and emergency response platform for humanitarian field workers in West Africa. The Expo/React Native app syncs case data once connectivity returns, with a Django REST backend running AI case analysis via Gemini.",
+    tags: [
+      { name: "react-native", color: "blue-text-gradient" },
+      { name: "offline-first", color: "green-text-gradient" },
+      { name: "django-rest", color: "pink-text-gradient" },
+    ],
+    icon: native,
+    source_code_link: "https://github.com/Pheebemi/jamaa-mobile",
+  },
+  {
+    name: "Watermark Tool",
+    description:
+      "A bulk photo watermarking tool with an Astro frontend and Django backend — upload a batch of photos, apply a logo watermark, and download the results.",
+    tags: [
+      { name: "django", color: "blue-text-gradient" },
+      { name: "astro", color: "green-text-gradient" },
+      { name: "image-processing", color: "pink-text-gradient" },
+    ],
+    icon: django,
+    source_code_link: "https://github.com/Pheebemi/watermark-backend",
   },
 ];
 
