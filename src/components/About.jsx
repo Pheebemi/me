@@ -39,7 +39,7 @@ const ServiceCard = ({ index, title, icon }) => (
 const About = () => {
   return (
     <>
-      <div className='flex lg:flex-row flex-col-reverse gap-10 lg:items-start items-center'>
+      <div className='flex lg:flex-row flex-col-reverse gap-10 items-center lg:items-stretch'>
         <div className='flex-1'>
           <motion.div
             initial={{ opacity: 0, y: -50 }}
@@ -77,12 +77,12 @@ const About = () => {
           whileInView={{ opacity: 1, scale: 1 }}
           transition={{ type: "spring", duration: 1.25 }}
           viewport={{ once: true }}
-          className='shrink-0 violet-gradient p-[3px] rounded-[20px] shadow-card'
+          className='shrink-0 violet-gradient p-[3px] rounded-[20px] shadow-card w-72 h-72 sm:w-80 sm:h-80 lg:w-96 lg:h-auto'
         >
           <img
             src={profile}
             alt='Lemuel Emmanuel'
-            className='w-48 h-48 sm:w-56 sm:h-56 rounded-[18px] object-cover'
+            className='w-full h-full rounded-[18px] object-cover'
           />
         </motion.div>
       </div>
