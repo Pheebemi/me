@@ -1,4 +1,5 @@
 import logo from "./logo.svg";
+import profile from "./profile.jpg";
 import backend from "./backend.png";
 import creator from "./creator.png";
 import mobile from "./mobile.png";
@@ -44,6 +45,7 @@ import thrive from "./company/thrive.png"
 
 export {
   logo,
+  profile,
   backend,
   creator,
   mobile,
