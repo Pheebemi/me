@@ -58,7 +58,7 @@ const About = () => {
             viewport={{ once: true }}
             className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
           >
-             I'm a full-stack developer specializing in Django + JavaScript/TypeScript and Ruby on Rails. On the backend I build scalable REST APIs with Python and TypeScript; on the frontend I craft modern interfaces with React, Next.js, and Vue.js; and on mobile I ship cross-platform apps with Expo and React Native. My work spans e-commerce, LMS platforms, healthcare systems, election portals, and retail — with a strong focus on API design, authentication, payment integration, database architecture, and DevOps.
+             I'm a full-stack developer and AI product engineer specializing in Django + JavaScript/TypeScript and Ruby on Rails. On the backend I build scalable REST APIs with Python and TypeScript; on the frontend I craft modern interfaces with React, Next.js, and Vue.js; and on mobile I ship cross-platform apps with Expo and React Native. My work spans e-commerce, LMS platforms, healthcare systems, election portals, and retail — with a strong focus on API design, authentication, payment integration, database architecture, and DevOps. I'm also the creator of Jenjo AI, an AI-powered language-learning app for Jenjo, the language of the Dza people of Taraba State.
           </motion.p>
 
           <motion.p
