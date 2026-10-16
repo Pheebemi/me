@@ -42,6 +42,8 @@ import sit from "./company/sit.png"
 import shapay from "./company/shapay.png"
 import algaddaf from "./company/algaddaf.png"
 import thrive from "./company/thrive.png"
+import laa from "./company/laa.svg"
+import jenjo from "./company/jenjo.svg"
 
 export {
   logo,
@@ -86,4 +88,6 @@ export {
   shapay,
   algaddaf,
   thrive,
+  laa,
+  jenjo,
 };
