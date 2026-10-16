@@ -37,7 +37,6 @@ import {
   algaddaf,
   thrive,
   laa,
-  jenjo,
 } from "../assets";
 
 export const navLinks = [
@@ -177,19 +176,6 @@ const experiences = [
       "Designing and integrating AI pipelines for document processing and data extraction.",
       "Collaborating with the team to deliver reliable, production-ready AI features.",
       "Working across the stack to ship AI-native product capabilities end to end.",
-    ],
-  },
-  {
-    title: "AI Engineer",
-    company_name: "Jenjo AI",
-    icon: jenjo,
-    iconBg: "#F3E9D8",
-    date: "2026 - Till date",
-    points: [
-      "Building an AI-powered language-learning platform for Jenjo, the language of the Dza people of Taraba State.",
-      "Training and integrating a custom Jenjo dataset into a Gemini-backed conversational tutor.",
-      "Developing the Next.js frontend and Django backend that power interactive lessons.",
-      "Designing graceful fallbacks so the app stays functional without a live AI provider key.",
     ],
   },
   {
